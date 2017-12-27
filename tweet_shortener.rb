@@ -14,7 +14,7 @@ def dictionary
   }
 end
 
-def word_substituter(tweet) {
+def word_substituter(tweet) do
   original_tweet_array = tweet.split
   dictionary
   words_to_sub = dictionary.keys
@@ -29,4 +29,4 @@ def word_substituter(tweet) {
   end
   new_tweet = new_tweet_array.join(" ")
 
-}
+end
