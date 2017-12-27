@@ -22,7 +22,8 @@ def word_substituter(tweet)
   original_tweet_array.each do |word_in_tweet|
     index = original_tweet_array.index(word_in_tweet)
     words_to_sub.each do |long_word|
-      if word_in_tweet == long_word
+      fix_case = word_in_tweet.lowercase
+      if fix_case == long_word
         new_word = dictionary[long_word]
         new_tweet_array[index] = new_word
       end
